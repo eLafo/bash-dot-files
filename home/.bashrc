@@ -78,6 +78,11 @@ if [[ -n "$PS1" ]]; then
 	    ;;
 	esac
 
+  # Customized bashrc scripts
+  for f in ~/.bashrc.d/*; do
+    . $f
+  done
+
 	# Alias definitions.
 	# You may want to put all your additions into a separate file like
 	# ~/.bash_aliases, instead of adding them here directly.
